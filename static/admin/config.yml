@@ -1,7 +1,7 @@
 backend:
-  name: github
-  repo: jamgar/portfolio_v3 # Path to your Github repository
-  branch: master # Branch to update (master by default)
+  name: git-gateway
+  accept_roles:
+    - admin
 
 media_folder: 'static/images/uploads' # Folder where user uploaded files should go
 public_folder: '/images/uploads' # CMS now knows 'source' is the public folder and will strip this from the path
