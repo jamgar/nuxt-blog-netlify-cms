@@ -4,10 +4,13 @@
       >Nuxt Blog</nuxt-link
     >
     <div class="tc pb3">
-      <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-      <a class="link dim gray f6 f5-ns dib mr3" href="#" title="About">About</a>
-      <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store">Store</a>
-      <a class="link dim gray f6 f5-ns dib" href="#" title="Contact">Contact</a>
+      <nuxt-link class="link dim gray f6 f5-ns dib mr3" to="/">Home</nuxt-link>
+      <nuxt-link class="link dim gray f6 f5-ns dib mr3" to="/About"
+        >About</nuxt-link
+      >
+      <nuxt-link class="link dim gray f6 f5-ns dib mr3" to="/Posts"
+        >Posts</nuxt-link
+      >
     </div>
   </nav>
 </template>
