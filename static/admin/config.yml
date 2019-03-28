@@ -1,12 +1,9 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
+  branch: master
 
 media_folder: 'static/images/uploads' # Folder where user uploaded files should go
 public_folder: '/images/uploads' # CMS now knows 'source' is the public folder and will strip this from the path
-
-publish_mode: editorial_workflow
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
