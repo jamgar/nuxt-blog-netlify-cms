@@ -1,9 +1,8 @@
 ---
-title: 'Not Another Blog'
-tags: blog
+title: Not Another Blog
+tags: 'blog, demo'
 date: 2017-05-05T23:44:47.000Z
-image: null
-directory_index: false
+thumbnail: /images/uploads/mic.jpg
 ---
 
 Hi! My name is James Garcia. Sorry to say, but yes this is another blog. This will be my initial "true" post as opposed to using Lorem Ipsum or [Hipsum](https://hipsum.co) as filler text for my post like I have used while learning to code blogs and todo list. My hope is begin to writing and passing on information that will be helpful and useful. My plan is to write about coding and fitness, which are two of my passions.
