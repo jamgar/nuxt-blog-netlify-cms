@@ -20,7 +20,8 @@
     "markdown-it-front-matter": "^0.1.2",
     "markdown-it-highlightjs": "^3.0.0",
     "nuxt": "^2.4.0",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.11.1",
+    "vue-moment": "^4.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar />
-    <nuxt />
+    <div class="ph3 ph5-ns">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -17,8 +19,9 @@ export default {
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', 'avenir',
+    'helvetica', 'sans-serif';
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

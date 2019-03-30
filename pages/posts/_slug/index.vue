@@ -3,15 +3,14 @@
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">{{ $route.params.slug }}</h1>
-          <h2 class="subtitle">A dynamic markdown file</h2>
+          <div v-if="attributes.image">
+            <img src="attributes.image" alt="attributes.title" />
+          </div>
+          <h1 class="title">{{ attributes.title }}</h1>
+          <div v-html="content"></div>
         </div>
       </div>
     </section>
-    <div class="container">
-      <div>{{ attributes.title }}</div>
-      <div v-html="content"></div>
-    </div>
   </div>
 </template>
 
@@ -25,7 +24,6 @@ const md = require('markdown-it')({
 export default {
   async asyncData({ params }) {
     const fileContent = await import(`~/content/posts/${params.slug}.md`)
-    console.log(fileContent)
     return {
       attributes: fileContent.attributes,
       content: md.render(fileContent.body)

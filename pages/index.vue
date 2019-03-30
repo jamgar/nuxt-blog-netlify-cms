@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div>{{ allPost }}</div>
+    <div>All Post listed here!</div>
   </section>
 </template>
 
