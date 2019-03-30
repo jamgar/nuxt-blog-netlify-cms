@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div v-if="attributes.thumbnail">
-            <img src="attributes.thumbnail" alt="attributes.title" />
+            <img :src="attributes.thumbnail" :alt="attributes.title" />
           </div>
           <h1 class="title">{{ attributes.title }}</h1>
           <div v-html="content"></div>
