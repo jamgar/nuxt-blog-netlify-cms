@@ -2,7 +2,12 @@
   <div class="f5 f3-m lh-copy">
     <div class="cf dt-l w-100 pv4">
       <div class="dtc-l v-mid mw6 pr3-l">
-        <img class="w-100" src="http://mrmrs.github.io/photos/009.jpg" alt />
+        <img
+          v-if="attributes.thumbnail"
+          class="w-100"
+          :src="attributes.thumbnail"
+          :alt="attributes.title"
+        />
       </div>
       <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
         <nuxt-link class="link underline-hover near-black" :to="post._path">
@@ -13,9 +18,9 @@
           By
           <span class="ttu">James Garcia</span>
         </p>
-        <time class="f6 db gray">{{
-          post.attributes.date | moment('dddd, MMMM Do YYYY')
-        }}</time>
+        <time class="f6 db gray">
+          {{ post.attributes.date | moment('dddd, MMMM Do YYYY') }}
+        </time>
       </div>
     </div>
   </div>
