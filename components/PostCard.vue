@@ -3,10 +3,10 @@
     <div class="cf dt-l w-100 pv4">
       <div class="dtc-l v-mid mw6 pr3-l">
         <img
-          v-if="attributes.thumbnail"
+          v-if="post.attributes.thumbnail"
           class="w-100"
-          :src="attributes.thumbnail"
-          :alt="attributes.title"
+          :src="post.attributes.thumbnail"
+          :alt="post.attributes.title"
         />
       </div>
       <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
@@ -18,9 +18,9 @@
           By
           <span class="ttu">James Garcia</span>
         </p>
-        <time class="f6 db gray">{{
-          post.attributes.date | moment('dddd, MMMM Do YYYY')
-        }}</time>
+        <time class="f6 db gray">
+          {{ post.attributes.date | moment('dddd, MMMM Do YYYY') }}
+        </time>
       </div>
     </div>
   </div>
@@ -45,7 +45,6 @@ export default {
   computed: {
     getFormattedPost() {
       return {
-        attributes: this.post.attributes,
         content: md.render(this.truncate())
       }
     }
