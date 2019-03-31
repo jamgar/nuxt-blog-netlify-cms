@@ -1,6 +1,6 @@
 <template>
-  <nav class="pa3 pa4-ns mb2">
-    <nuxt-link class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" to="/"
+  <nav class="pa3 pa4-ns">
+    <nuxt-link class="link dim black b f1 f-headline tc db mb3 mb4-ns" to="/"
       >Nuxt Blog</nuxt-link
     >
     <div class="tc pb3">

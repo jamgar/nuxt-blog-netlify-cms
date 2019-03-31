@@ -13,9 +13,9 @@
           By
           <span class="ttu">James Garcia</span>
         </p>
-        <time class="f6 db gray">
-          {{ post.attributes.date | moment('dddd, MMMM Do YYYY') }}
-        </time>
+        <time class="f6 db gray">{{
+          post.attributes.date | moment('dddd, MMMM Do YYYY')
+        }}</time>
       </div>
     </div>
   </div>

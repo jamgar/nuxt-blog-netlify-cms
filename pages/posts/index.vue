@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ph5">
     <PostCard v-for="(post, idx) in Posts" :key="idx" :post="post" />
   </div>
 </template>
