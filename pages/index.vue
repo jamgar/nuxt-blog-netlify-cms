@@ -7,8 +7,8 @@
     </header>
     <section id="featured-post">
       <h1 class="f2 tc">Featured Posts</h1>
-      <div class="ph5">
-        <PostCard v-for="(post, idx) in Posts" :key="idx" :post="post" />
+      <div v-for="(post, idx) in Posts" :key="idx" class="ph5">
+        <PostCard :post="post" />
       </div>
     </section>
   </div>

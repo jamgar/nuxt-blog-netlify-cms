@@ -1,6 +1,8 @@
 <template>
-  <div class="ph5">
-    <PostCard v-for="(post, idx) in Posts" :key="idx" :post="post" />
+  <div>
+    <div v-for="(post, idx) in Posts" :key="idx" class="ph5">
+      <PostCard :post="post" />
+    </div>
   </div>
 </template>
 
