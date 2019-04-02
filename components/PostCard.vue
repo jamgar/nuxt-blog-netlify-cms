@@ -13,7 +13,7 @@
         <nuxt-link class="link underline-hover near-black" :to="post._path">
           <h3>{{ post.attributes.title }}</h3>
         </nuxt-link>
-        <p class="measure pv2-l center">Description goes here</p>
+        <p class="measure pv2-l center">{{ getFormattedDescription }}</p>
         <p class="f6 lh-copy gray mv0">
           By
           <span class="ttu">James Garcia</span>
@@ -27,12 +27,6 @@
 </template>
 
 <script>
-const md = require('markdown-it')({
-  breaks: true,
-  linkify: true,
-  html: true
-}).use(require('markdown-it-highlightjs'))
-
 export default {
   props: {
     post: {
@@ -43,20 +37,20 @@ export default {
     }
   },
   computed: {
-    getFormattedPost() {
+    getFormattedDescription() {
       return {
-        content: md.render(this.truncate())
+        content: this.truncate()
       }
     }
   },
   methods: {
     truncate() {
-      const body = this.post.body
+      const description = this.attribute.description
       return (
-        body
-          .split(' ')
-          .slice(0, 62)
-          .join(' ') + '..."'
+        description
+          .split('')
+          .slice(0, 255)
+          .join('') + '..."'
       )
     }
   }
