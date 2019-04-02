@@ -3,6 +3,12 @@ title: Not Another Blog
 tags: 'blog, demo'
 date: 2017-05-05T23:44:47.000Z
 thumbnail: /images/uploads/mic.jpg
+description: >
+  Cred VHS farm-to-table poke, waistcoat pinterest food truck hexagon authentic.
+  Meggings fashion axe 8-bit umami. Man braid brunch put a bird on it gochujang,
+  adaptogen distillery banjo. Next level raw denim authentic hoodie keffiyeh.
+  Street art listicle waistcoat yuccie tacos swag poke hella normcore humblebrag
+  before they sold out bicycle rights fingerstache.
 ---
 
 Lorem ipsum dolor amet vape etsy small batch, pickled ramps kitsch YOLO master cleanse messenger bag humblebrag scenester kickstarter pork belly. Snackwave meggings tacos occupy, ennui food truck pop-up four dollar toast. Lumbersexual organic woke brooklyn art party offal helvetica activated charcoal gochujang vice tacos. Hexagon post-ironic hoodie palo santo fashion axe kombucha. Bitters lyft affogato blue bottle.
