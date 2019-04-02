@@ -18,4 +18,10 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'text',
+          pattern: ['.{0,255}', 'Max 255 characters'],
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
