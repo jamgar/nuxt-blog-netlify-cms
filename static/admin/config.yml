@@ -22,6 +22,6 @@ collections:
           label: 'Description',
           name: 'description',
           widget: 'text',
-          pattern: ['.{0,255}', 'Max 255 characters'],
+          pattern: ['.{12,}', 'Must have at least 12 characters'],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
