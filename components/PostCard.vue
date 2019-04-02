@@ -13,14 +13,14 @@
         <nuxt-link class="link underline-hover near-black" :to="post._path">
           <h3>{{ post.attributes.title }}</h3>
         </nuxt-link>
-        <p class="measure pv2-l center">{{ getFormattedDescription }}</p>
+        <p class="measure pv2-l center">{{ post.attributes.description }}</p>
         <p class="f6 lh-copy gray mv0">
           By
           <span class="ttu">James Garcia</span>
         </p>
-        <time class="f6 db gray">{{
-          post.attributes.date | moment('dddd, MMMM Do YYYY')
-        }}</time>
+        <time class="f6 db gray">
+          {{ post.attributes.date | moment('dddd, MMMM Do YYYY') }}
+        </time>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
   computed: {
     getFormattedDescription() {
       return {
-        content: this.truncate()
+        // content: this.truncate()
       }
     }
   },
