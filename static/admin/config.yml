@@ -22,7 +22,6 @@ collections:
           label: 'Description',
           name: 'description',
           widget: 'text',
-          pattern: ['^.{0,255}', 'Maximum 255 characters'],
           hint: 'Only allows 255 characters',
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }

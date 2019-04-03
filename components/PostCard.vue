@@ -13,7 +13,9 @@
         <nuxt-link class="link underline-hover near-black" :to="post._path">
           <h3>{{ post.attributes.title }}</h3>
         </nuxt-link>
-        <p class="measure pv2-l center">{{ post.attributes.description }}</p>
+        <p class="measure pv2-l center">
+          {{ getFormattedDescription.content }}
+        </p>
         <p class="f6 lh-copy gray mv0">
           By
           <span class="ttu">James Garcia</span>
@@ -39,19 +41,14 @@ export default {
   computed: {
     getFormattedDescription() {
       return {
-        // content: this.truncate()
+        content: this.truncate()
       }
     }
   },
   methods: {
     truncate() {
-      const description = this.attribute.description
-      return (
-        description
-          .split('')
-          .slice(0, 255)
-          .join('') + '..."'
-      )
+      const description = this.post.attributes.description
+      return description.substring(0, 255)
     }
   }
 }
