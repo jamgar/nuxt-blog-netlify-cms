@@ -2,7 +2,7 @@
   <div id="home">
     <header class="vh-75 bg-light-silver tc dt w-100">
       <div id="jumbotron" class="dtc v-mid cover ph3 ph4 ph5-l v-top">
-        <h1 class="f1 fl-m f-headline-l">Write more</h1>
+        <h1 class="f1 f-headline-l">Write more</h1>
       </div>
     </header>
     <section id="featured-post">
